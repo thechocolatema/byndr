@@ -15,9 +15,20 @@ class InterestsViewController: UIViewController {
     //Array for all values
     var interestArray : [String] = []
     @objc func submitButtonClick(_ sender: UIButton) {
-        let storyBoard: UIStoryboard = UIStoryboard(name: "App", bundle: nil)
-        let newViewController = storyBoard.instantiateViewController(withIdentifier: "appstoryboard")
-        self.present(newViewController, animated: true, completion: nil)
+        if(interestArray.count >= 5){
+            let storyBoard: UIStoryboard = UIStoryboard(name: "App", bundle: nil)
+            let newViewController = storyBoard.instantiateViewController(withIdentifier: "appstoryboard")
+            self.present(newViewController, animated: true, completion: nil)
+        }
+        else{
+            let alert = UIAlertController( title: "Select categories", message: "Please Select 5 categories that you're interested in", preferredStyle: UIAlertControllerStyle.alert)
+            
+            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: {(action) in
+                self.dismiss(animated: true, completion: nil)
+            }))
+            
+            self.present(alert, animated: true, completion: nil)
+        }
     }
     @objc func buttonAction(sender: SelectorButton!) {
         sender.isSelected = !sender.isSelected
@@ -27,8 +38,6 @@ class InterestsViewController: UIViewController {
             if(interestArray.contains(sender.object.objectId!) == false){
                 interestArray.append(sender.object.objectId!)
             }
-            //print(sender.isSelected)
-            //SelectorButton.setTitle("ON", for: .normal)
         }
             
         //If button not selected remove from array
@@ -36,10 +45,8 @@ class InterestsViewController: UIViewController {
             if let index = interestArray.index(of:sender.object.objectId!) {
                 if(interestArray.contains(sender.object.objectId!) == true){
                     interestArray.remove(at: index)
-                }                
+                }
             }
-            //print(sender.isSelected)
-            //toggleBT.setTitle("OFF", for: .normal)
         }
         print(interestArray)
     }
@@ -94,7 +101,8 @@ class InterestsViewController: UIViewController {
                         let stringsize: CGSize = button.titleLabel!.text!.size(withAttributes: [NSAttributedStringKey.font: UIFont.systemFont(ofSize: 24.0)])
                         
                         //Set button width and height to the width,height of its text
-                        button.frame = CGRect(x:buttonX,y:stringsize.height+buttonPadding+40,width:stringsize.width+buttonPadding, height:stringsize.height+buttonPadding);
+                        //Set buttons below text 115 high
+                        button.frame = CGRect(x:buttonX,y:stringsize.height+buttonPadding+155,width:stringsize.width+buttonPadding, height:stringsize.height+buttonPadding);
                         
                         //print(button.object.objectId!)
                         //Button click event
@@ -102,7 +110,7 @@ class InterestsViewController: UIViewController {
                         self.view.addSubview(button)
                         
                         //Set X position to render each button in a different spot
-                        buttonX = buttonX+90
+                        buttonX = buttonX+stringsize.width+buttonPadding+10
                     }
                 }
             }else{
