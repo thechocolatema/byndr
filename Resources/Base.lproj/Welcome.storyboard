@@ -155,7 +155,7 @@
             </objects>
             <point key="canvasLocation" x="1352.8" y="-237.03148425787109"/>
         </scene>
-        <!--Interests-->
+        <!--Following-->
         <scene sceneID="MuU-4L-K3L">
             <objects>
                 <viewController storyboardIdentifier="InterestsView" id="7bZ-yK-ee9" customClass="InterestsViewController" customModule="Byndr" customModuleProvider="target" sceneMemberID="viewController">
@@ -166,19 +166,9 @@
                     <view key="view" contentMode="scaleToFill" id="WDC-oL-7M2">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Zx-rm-5uJ">
-                                <rect key="frame" x="184" y="502" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="submitButtonClick:" destination="7bZ-yK-ee9" eventType="touchUpInside" id="Jov-Re-UfT"/>
-                                </connections>
-                            </button>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Interests" id="D0q-ZM-HvA"/>
+                    <navigationItem key="navigationItem" title="Following" id="D0q-ZM-HvA"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x2d-t9-lB7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

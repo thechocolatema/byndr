@@ -24,9 +24,13 @@
 		976A39541F7CCC15006FF3EB /* InterestsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 976A39531F7CCC15006FF3EB /* InterestsViewController.swift */; };
 		97A30C281F7D9733006EB2AF /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A30C271F7D9733006EB2AF /* NavigationController.swift */; };
 		97A30C2A1F7D9966006EB2AF /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A30C291F7D9966006EB2AF /* TabBarController.swift */; };
+		9C777126127EFE8B216B0CE0 /* Pods_Byndr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FFEB97836D39EB3910D5D8B /* Pods_Byndr.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		01B1D49E5AFB4E5945CED521 /* Pods-Byndr.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Byndr.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Byndr/Pods-Byndr.debug.xcconfig"; sourceTree = "<group>"; };
+		188ED1EA7AD4D045ECFAC922 /* Pods-Byndr.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Byndr.release.xcconfig"; path = "Pods/Target Support Files/Pods-Byndr/Pods-Byndr.release.xcconfig"; sourceTree = "<group>"; };
+		2FFEB97836D39EB3910D5D8B /* Pods_Byndr.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Byndr.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		814C3AC71B69877600E307BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Welcome.storyboard; sourceTree = "<group>"; };
 		814C3AC81B69877600E307BB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		814C3AC91B69877600E307BB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -61,6 +65,7 @@
 				81BA81771A49E0D500E65899 /* libsqlite3.dylib in Frameworks */,
 				81BA81711A49DB6800E65899 /* Parse.framework in Frameworks */,
 				81BA81701A49DB6800E65899 /* Bolts.framework in Frameworks */,
+				9C777126127EFE8B216B0CE0 /* Pods_Byndr.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +88,7 @@
 				814C3AC51B69877600E307BB /* Resources */,
 				81BA816A1A49DB5600E65899 /* Frameworks */,
 				81BA81461A49DA1800E65899 /* Products */,
+				C10573A7E3FC8BDED1D024E8 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -116,6 +122,7 @@
 				81BA816E1A49DB6800E65899 /* ParseFacebookUtils.framework */,
 				81BA81801A49E10C00E65899 /* ParseUI.framework */,
 				81BA81751A49E0C500E65899 /* System Frameworks */,
+				2FFEB97836D39EB3910D5D8B /* Pods_Byndr.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -150,6 +157,15 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		C10573A7E3FC8BDED1D024E8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				01B1D49E5AFB4E5945CED521 /* Pods-Byndr.debug.xcconfig */,
+				188ED1EA7AD4D045ECFAC922 /* Pods-Byndr.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -157,9 +173,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 81BA81641A49DA1800E65899 /* Build configuration list for PBXNativeTarget "Byndr" */;
 			buildPhases = (
+				1DBE991F8945FC4FF15B542D /* [CP] Check Pods Manifest.lock */,
 				81BA81411A49DA1800E65899 /* Sources */,
 				81BA81421A49DA1800E65899 /* Frameworks */,
 				81BA81431A49DA1800E65899 /* Resources */,
+				28718A6EE18E310CF8D8AE11 /* [CP] Embed Pods Frameworks */,
+				74B33B84F3723C78E9C6FFD0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -216,6 +235,60 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1DBE991F8945FC4FF15B542D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Byndr-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		28718A6EE18E310CF8D8AE11 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Byndr/Pods-Byndr-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/IoniconsSwift/IoniconsSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IoniconsSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Byndr/Pods-Byndr-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		74B33B84F3723C78E9C6FFD0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Byndr/Pods-Byndr-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		81BA81411A49DA1800E65899 /* Sources */ = {
@@ -348,6 +421,7 @@
 		};
 		81BA81651A49DA1800E65899 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01B1D49E5AFB4E5945CED521 /* Pods-Byndr.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -366,6 +440,7 @@
 		};
 		81BA81661A49DA1800E65899 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 188ED1EA7AD4D045ECFAC922 /* Pods-Byndr.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
