@@ -18,7 +18,22 @@ class InterestsViewController: UIViewController {
         self.present(newViewController, animated: true, completion: nil)
     }
     @objc func buttonAction(sender: SelectorButton!) {
-        print(sender.object.objectId!)
+        //print(sender.object.objectId!)
+        sender.isSelected = !sender.isSelected
+        
+        //If button selected push item to array
+        if sender.isSelected {
+            
+            print(sender.isSelected)
+            //SelectorButton.setTitle("ON", for: .normal)
+        }
+            
+        //If button not selected remove from array
+        else {
+            
+            print(sender.isSelected)
+            //toggleBT.setTitle("OFF", for: .normal)
+        }
     }
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,18 +44,10 @@ class InterestsViewController: UIViewController {
         
         //Show list of all topics
         let query = PFQuery(className: "Interest")
-        let emptySpace:CGFloat = 40 //how much you want (left + right)
-        //let xAxis:CGFloat = emptySpace/2
-        let space:CGFloat = 2
-        //let buttonWidth = ((self.view.frame.size.width)-((space*7)+emptySpace))/4
+        let buttonPadding: CGFloat = 10
         
         var buttonX : CGFloat = 0
-        
-        //let yAxis : CGFloat = self.view.frame.size.height - 100
-        
-        
-        
-        //let yAxis2 : CGFloat = self.view.frame.size.height
+
         query.findObjectsInBackground {(objects: [PFObject]?, error: Error?) -> Void in
             if error == nil{
                 if let objects = objects {
@@ -52,22 +59,30 @@ class InterestsViewController: UIViewController {
                         //Set X position to render each button in a different spot
                         buttonX = buttonX+90
                         
-                        button.backgroundColor = UIColor.black
+                        //button.backgroundColor = UIColor.clear
                         button.setTitle(object["name"] as? String, for: .normal)
                         button.object = object
-                        button.layer.cornerRadius = 15
-                        button.layer.borderWidth = 1
+                        button.layer.cornerRadius = 20
+                        button.layer.borderWidth = 3
                         
+                        //Button title and background for different states
+                        button.setTitleColor(UIColor.black, for: .normal)
+                        button.isSelected = false
+                        button.setBackgroundColor(color: UIColor.clear, forState: .normal)
+                        button.setBackgroundColor(color: UIColor.blue, forState: .selected)
+                        button.setTitleColor(UIColor.white, for: .selected)
+                        
+                        button.layer.masksToBounds = true
+
                         //Get the height,length of the text
                         let stringsize: CGSize = button.titleLabel!.text!.size(withAttributes: [NSAttributedStringKey.font: UIFont.systemFont(ofSize: 24.0)])
                         
                         //Set button width and height to the width,height of its text
-                        button.frame = CGRect(x:buttonX,y:150,width:stringsize.width, height:stringsize.height);
+                        button.frame = CGRect(x:buttonX,y:150,width:stringsize.width+buttonPadding, height:stringsize.height+buttonPadding);
                         
                         //Button click event
                         button.addTarget(self, action: #selector(self.buttonAction(sender:)), for: .touchUpInside)
                         self.view.addSubview(button)
-                        print(object["name"] as! String)
                     }
                 }
             }else{

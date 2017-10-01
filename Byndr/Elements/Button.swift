@@ -22,6 +22,27 @@ class SelectorButton: UIButton {
         super.awakeFromNib()
     }
     
+    func setBackgroundColor(color: UIColor, forState: UIControlState) {
+        
+        UIGraphicsBeginImageContext(CGSize(width: 1, height: 1))
+        UIGraphicsGetCurrentContext()!.setFillColor(color.cgColor)
+        UIGraphicsGetCurrentContext()!.fill(CGRect(x: 0, y: 0, width: 1, height: 1))
+        let colorImage = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        
+        self.setBackgroundImage(colorImage, for: forState)
+    }
+    
+    override var isSelected: Bool{
+        willSet {
+            print("changing from \(isSelected) to \(newValue)")
+        }
+        
+        didSet {
+            print("changed from \(oldValue) to \(isSelected)")
+        }
+    }
+    
     override var intrinsicContentSize: CGSize{
         return CGSize(width: self.frame.size.width, height:self.titleLabel!.frame.size.height)
     }
