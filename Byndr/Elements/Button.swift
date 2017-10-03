@@ -35,11 +35,11 @@ class SelectorButton: UIButton {
     
     override var isSelected: Bool{
         willSet {
-            print("changing from \(isSelected) to \(newValue)")
+            //print("changing from \(isSelected) to \(newValue)")
         }
         
         didSet {
-            print("changed from \(oldValue) to \(isSelected)")
+            //print("changed from \(oldValue) to \(isSelected)")
         }
     }
     
