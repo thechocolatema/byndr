@@ -13,6 +13,7 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var emailTextBox: UITextField!
     @IBOutlet weak var usernameTextBox: UITextField!
     @IBOutlet weak var passwordTextBox: UITextField!
+    @IBOutlet weak var fullNameTextBox: UITextField!
     
     @IBOutlet weak var submitButton: UIButton!
     func CreateAlert(title: String, message: String){
@@ -34,8 +35,10 @@ class SignUpViewController: UIViewController {
             let User = PFUser()
             
             User.username = usernameTextBox.text
+            User["fullName"] = fullNameTextBox.text
             User.email = emailTextBox.text
             User.password = passwordTextBox.text
+            
             
             User.signUpInBackground {
                 (success, error) -> Void in

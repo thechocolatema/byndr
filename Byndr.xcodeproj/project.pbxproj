@@ -22,6 +22,9 @@
 		976A39501F7CC472006FF3EB /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 976A394F1F7CC472006FF3EB /* WelcomeViewController.swift */; };
 		976A39521F7CC918006FF3EB /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 976A39511F7CC918006FF3EB /* SignUpViewController.swift */; };
 		976A39541F7CCC15006FF3EB /* InterestsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 976A39531F7CCC15006FF3EB /* InterestsViewController.swift */; };
+		9797AA081F849CC900A975B3 /* FeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9797AA071F849CC900A975B3 /* FeedTableViewController.swift */; };
+		9797AA0A1F84B81F00A975B3 /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9797AA091F84B81F00A975B3 /* FeedTableViewCell.swift */; };
+		979977B01F841F3F009540B3 /* CreatePostController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979977AF1F841F3F009540B3 /* CreatePostController.swift */; };
 		97A30C281F7D9733006EB2AF /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A30C271F7D9733006EB2AF /* NavigationController.swift */; };
 		97A30C2A1F7D9966006EB2AF /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A30C291F7D9966006EB2AF /* TabBarController.swift */; };
 		9C777126127EFE8B216B0CE0 /* Pods_Byndr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FFEB97836D39EB3910D5D8B /* Pods_Byndr.framework */; };
@@ -50,6 +53,9 @@
 		976A394F1F7CC472006FF3EB /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		976A39511F7CC918006FF3EB /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		976A39531F7CCC15006FF3EB /* InterestsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterestsViewController.swift; sourceTree = "<group>"; };
+		9797AA071F849CC900A975B3 /* FeedTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewController.swift; sourceTree = "<group>"; };
+		9797AA091F84B81F00A975B3 /* FeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
+		979977AF1F841F3F009540B3 /* CreatePostController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostController.swift; sourceTree = "<group>"; };
 		97A30C271F7D9733006EB2AF /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		97A30C291F7D9966006EB2AF /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -146,6 +152,9 @@
 				976A39511F7CC918006FF3EB /* SignUpViewController.swift */,
 				976A39531F7CCC15006FF3EB /* InterestsViewController.swift */,
 				97A30C291F7D9966006EB2AF /* TabBarController.swift */,
+				979977AF1F841F3F009540B3 /* CreatePostController.swift */,
+				9797AA071F849CC900A975B3 /* FeedTableViewController.swift */,
+				9797AA091F84B81F00A975B3 /* FeedTableViewCell.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -300,9 +309,12 @@
 				81BA814D1A49DA1800E65899 /* ViewController.swift in Sources */,
 				974DC5031F7EB6BB00D4A2F4 /* Button.swift in Sources */,
 				976A39521F7CC918006FF3EB /* SignUpViewController.swift in Sources */,
+				979977B01F841F3F009540B3 /* CreatePostController.swift in Sources */,
 				97A30C2A1F7D9966006EB2AF /* TabBarController.swift in Sources */,
+				9797AA081F849CC900A975B3 /* FeedTableViewController.swift in Sources */,
 				81BA814B1A49DA1800E65899 /* AppDelegate.swift in Sources */,
 				976A39541F7CCC15006FF3EB /* InterestsViewController.swift in Sources */,
+				9797AA0A1F84B81F00A975B3 /* FeedTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

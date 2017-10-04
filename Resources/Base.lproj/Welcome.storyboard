@@ -122,18 +122,11 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ccd-QV-QNx">
-                                <rect key="frame" x="16" y="169" width="184" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="j2s-mf-fUL">
                                 <rect key="frame" x="16" y="207" width="184" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bGc-db-XNG">
                                 <rect key="frame" x="153" y="270" width="49" height="30"/>
@@ -144,12 +137,27 @@
                                     <action selector="submitButtonClick:" destination="GmR-Tt-xwy" eventType="touchUpInside" id="o0M-vA-Nor"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Full Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="j64-rZ-IVi">
+                                <rect key="frame" x="16" y="169" width="180" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="j2s-mf-fUL">
+                                <rect key="frame" x="16" y="245" width="184" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Sign Up" id="K2n-cA-QJ3"/>
                     <connections>
                         <outlet property="emailTextBox" destination="ujk-xl-GSp" id="rep-6O-e5j"/>
+                        <outlet property="fullNameTextBox" destination="j64-rZ-IVi" id="NYJ-ke-J6K"/>
                         <outlet property="passwordTextBox" destination="j2s-mf-fUL" id="AcM-E5-JGu"/>
                         <outlet property="submitButton" destination="bGc-db-XNG" id="Oye-Km-O36"/>
                         <outlet property="usernameTextBox" destination="ccd-QV-QNx" id="o8Y-Gu-qnE"/>
@@ -158,7 +166,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UAe-AF-ltp" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="C7D-G3-JtD" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1352.8" y="-237.03148425787109"/>
+            <point key="canvasLocation" x="1352.1739130434785" y="-237.22826086956525"/>
         </scene>
         <!--Following-->
         <scene sceneID="MuU-4L-K3L">

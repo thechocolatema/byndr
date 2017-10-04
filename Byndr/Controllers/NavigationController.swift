@@ -14,7 +14,7 @@ class NavigationController: UINavigationController {
         super.viewDidLoad()
 
         let color = UIColor.black
-        let font = UIFont(name: "Helvetica", size: 20)!
+        let font = UIFont(name: "Helvetica-bold", size: 20)!
         
         let attributes: [NSAttributedStringKey : Any] = [
             .font: font,
