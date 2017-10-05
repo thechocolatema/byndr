@@ -27,9 +27,11 @@ class FeedTableViewController: UITableViewController{
         
         //Get list of posts
         let query = PFQuery(className:"Post")
+        query.order(byDescending: "createdAt")
         query.findObjectsInBackground {(objects: [PFObject]?, error: Error?) -> Void in
             if error == nil {
                 if let _objects = objects {
+                    print(objects)
                     self.queryArray = _objects
                     self.tableView.reloadData()
                 }
@@ -65,20 +67,29 @@ class FeedTableViewController: UITableViewController{
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell") as! FeedTableViewCell
         let object = queryArray[indexPath.row]
-        //cell.textLabel?.text = object.object(forKey: "postText") as? String
         cell.feedContent.text = object.object(forKey: "postText") as? String
-        //cell.feedContent.sizeToFit()
-        cell.feedName.text = "Hans"
-        cell.feedUsername.text! = "@dsa"
-        print(cell.feedUsername.text!)
+        cell.feedUsername.text = "@\(object.object(forKey: "username") as! String)"
         cell.feedImage.image = Ionicons.person.image(50, color: UIColor.black).withRenderingMode(UIImageRenderingMode.alwaysOriginal)
-        cell.feedImage.layer.cornerRadius = 0.5 * cell.feedImage.bounds.size.width
-        cell.feedImage.clipsToBounds = true
-        //postText.text = object.object(forKey: "postText") as? String
-        //print(object.object(forKey: "postText") as! String)
+        let username = object.object(forKey: "username") as! String
+        //let jsonResult = try JSONSerialization.jsonObject(with: username, options: JSONSerialization.ReadingOptions.mutableContainers) as! [String:Any]
 
-            return cell
-            
+        //var name = PFQuery(className: "user")
+        var query = PFUser.query()!
+        query.whereKey("username", equalTo:username)
+        query.getFirstObjectInBackground { newUser, error in
+            if error == nil {
+                //print(newUser!["fullName"])
+                let userVariable = newUser!["fullName"]
+                cell.feedName.text = userVariable as! String
+                
+            }
+            else{
+                //print("User is \(newUser)")
+            }
+        }
+        //print(object.object(forKey: "user"))
+        
+        return cell
     }
 
     /*

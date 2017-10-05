@@ -35,8 +35,8 @@ class TabBarController: UITabBarController {
         
         
         let myTabBarItem3 = (self.tabBar.items?[2])! as UITabBarItem
-        myTabBarItem3.image = Ionicons.iosPerson.image(30, color: grayColor).withRenderingMode(UIImageRenderingMode.alwaysOriginal)
-        myTabBarItem3.selectedImage = Ionicons.iosPerson.image(30, color: purpleColor).withRenderingMode(UIImageRenderingMode.alwaysOriginal)
+        myTabBarItem3.image = Ionicons.iosPerson.image(35, color: grayColor).withRenderingMode(UIImageRenderingMode.alwaysOriginal)
+        myTabBarItem3.selectedImage = Ionicons.iosPerson.image(35, color: purpleColor).withRenderingMode(UIImageRenderingMode.alwaysOriginal)
         myTabBarItem3.title = ""
         myTabBarItem3.imageInsets = UIEdgeInsets(top: 6, left: 0, bottom: -6, right: 0)
     }
