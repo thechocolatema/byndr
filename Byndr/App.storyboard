@@ -19,7 +19,7 @@
         <!--Profile-->
         <scene sceneID="FLS-ej-nxr">
             <objects>
-                <viewController id="EH4-gm-bhS" sceneMemberID="viewController">
+                <viewController id="EH4-gm-bhS" customClass="ProfileViewController" customModule="Byndr" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="hTD-FC-uk7"/>
                         <viewControllerLayoutGuide type="bottom" id="ieS-At-vBe"/>
@@ -113,6 +113,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Profile" id="LFO-sT-ReT"/>
+                    <connections>
+                        <outlet property="profileImage" destination="Wh2-Cb-G2H" id="NKi-IY-Jyj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yIi-qG-tBJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -131,7 +134,7 @@
                                 <rect key="frame" x="0.0" y="28" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="yGd-C2-wBw" id="0PR-nk-yva">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.666666666666664"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WsA-Xy-PTD">
