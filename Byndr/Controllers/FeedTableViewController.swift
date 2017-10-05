@@ -14,6 +14,14 @@ class FeedTableViewController: UITableViewController{
     //var totalPosts = 0
     var queryArray: [PFObject] = []
 
+    func rectForText(text: String, font: UIFont, maxSize: CGSize) -> CGSize {
+        let attrString = NSAttributedString.init(string: text, attributes: [NSAttributedStringKey.font:font])
+        let rect = attrString.boundingRect(with: maxSize, options: NSStringDrawingOptions.usesLineFragmentOrigin, context: nil)
+        //let size = CGSizeMake(rect.size.width, rect.size.height)
+        let size = CGSize(width: rect.size.width, height: rect.size.height)
+        return size
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -67,7 +75,9 @@ class FeedTableViewController: UITableViewController{
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell") as! FeedTableViewCell
         let object = queryArray[indexPath.row]
+
         cell.feedContent.text = object.object(forKey: "postText") as? String
+        
         cell.feedUsername.text = "@\(object.object(forKey: "username") as! String)"
         cell.feedImage.image = Ionicons.person.image(50, color: UIColor.black).withRenderingMode(UIImageRenderingMode.alwaysOriginal)
         let username = object.object(forKey: "username") as! String
