@@ -8,6 +8,7 @@
 
 import UIKit
 import Parse
+import IoniconsSwift
 
 class FeedTableViewController: UITableViewController{
     //var totalPosts = 0
@@ -18,6 +19,11 @@ class FeedTableViewController: UITableViewController{
         
         tableView.delegate = self
         tableView.dataSource = self
+        
+        //self.tableView.estimatedRowHeight = 80
+        //self.tableView.rowHeight = 100
+        tableView.estimatedRowHeight = 44.0
+        self.tableView.rowHeight = UITableViewAutomaticDimension
         
         //Get list of posts
         let query = PFQuery(className:"Post")
@@ -65,6 +71,9 @@ class FeedTableViewController: UITableViewController{
         cell.feedName.text = "Hans"
         cell.feedUsername.text! = "@dsa"
         print(cell.feedUsername.text!)
+        cell.feedImage.image = Ionicons.person.image(50, color: UIColor.black).withRenderingMode(UIImageRenderingMode.alwaysOriginal)
+        cell.feedImage.layer.cornerRadius = 0.5 * cell.feedImage.bounds.size.width
+        cell.feedImage.clipsToBounds = true
         //postText.text = object.object(forKey: "postText") as? String
         //print(object.object(forKey: "postText") as! String)
 
