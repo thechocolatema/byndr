@@ -22,6 +22,8 @@
 		976A39501F7CC472006FF3EB /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 976A394F1F7CC472006FF3EB /* WelcomeViewController.swift */; };
 		976A39521F7CC918006FF3EB /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 976A39511F7CC918006FF3EB /* SignUpViewController.swift */; };
 		976A39541F7CCC15006FF3EB /* InterestsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 976A39531F7CCC15006FF3EB /* InterestsViewController.swift */; };
+		978F431D1F882AEF0094496B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 978F431C1F882AEF0094496B /* LoginViewController.swift */; };
+		978F431F1F882E7A0094496B /* AppController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 978F431E1F882E7A0094496B /* AppController.swift */; };
 		9797AA081F849CC900A975B3 /* FeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9797AA071F849CC900A975B3 /* FeedTableViewController.swift */; };
 		9797AA0A1F84B81F00A975B3 /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9797AA091F84B81F00A975B3 /* FeedTableViewCell.swift */; };
 		9797AA0C1F86141200A975B3 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9797AA0B1F86141100A975B3 /* ProfileViewController.swift */; };
@@ -54,9 +56,11 @@
 		976A394F1F7CC472006FF3EB /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		976A39511F7CC918006FF3EB /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		976A39531F7CCC15006FF3EB /* InterestsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterestsViewController.swift; sourceTree = "<group>"; };
+		978F431C1F882AEF0094496B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		978F431E1F882E7A0094496B /* AppController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppController.swift; sourceTree = "<group>"; };
 		9797AA071F849CC900A975B3 /* FeedTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewController.swift; sourceTree = "<group>"; };
 		9797AA091F84B81F00A975B3 /* FeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
-		9797AA0B1F86141100A975B3 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProfileViewController.swift; path = Controllers/ProfileViewController.swift; sourceTree = "<group>"; };
+		9797AA0B1F86141100A975B3 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		979977AF1F841F3F009540B3 /* CreatePostController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostController.swift; sourceTree = "<group>"; };
 		97A30C271F7D9733006EB2AF /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		97A30C291F7D9966006EB2AF /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
@@ -117,7 +121,6 @@
 				81BA814C1A49DA1800E65899 /* ViewController.swift */,
 				814C3AC61B69877600E307BB /* Welcome.storyboard */,
 				976A39491F7CC24B006FF3EB /* App.storyboard */,
-				9797AA0B1F86141100A975B3 /* ProfileViewController.swift */,
 				974DC5021F7EB6BB00D4A2F4 /* Button.swift */,
 			);
 			path = Byndr;
@@ -158,6 +161,9 @@
 				979977AF1F841F3F009540B3 /* CreatePostController.swift */,
 				9797AA071F849CC900A975B3 /* FeedTableViewController.swift */,
 				9797AA091F84B81F00A975B3 /* FeedTableViewCell.swift */,
+				9797AA0B1F86141100A975B3 /* ProfileViewController.swift */,
+				978F431C1F882AEF0094496B /* LoginViewController.swift */,
+				978F431E1F882E7A0094496B /* AppController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -318,7 +324,9 @@
 				9797AA081F849CC900A975B3 /* FeedTableViewController.swift in Sources */,
 				81BA814B1A49DA1800E65899 /* AppDelegate.swift in Sources */,
 				976A39541F7CCC15006FF3EB /* InterestsViewController.swift in Sources */,
+				978F431D1F882AEF0094496B /* LoginViewController.swift in Sources */,
 				9797AA0A1F84B81F00A975B3 /* FeedTableViewCell.swift in Sources */,
+				978F431F1F882E7A0094496B /* AppController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

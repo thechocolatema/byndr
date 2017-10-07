@@ -36,15 +36,16 @@ class FeedTableViewController: UITableViewController{
         //Get list of posts
         let query = PFQuery(className:"Post")
         query.order(byDescending: "createdAt")
+        //query.whereKey("username", equalTo:PFUser.current()!.username)
         query.findObjectsInBackground {(objects: [PFObject]?, error: Error?) -> Void in
             if error == nil {
+                //print("USER IS \(PFUser.current()!.username)")
                 if let _objects = objects {
-                    print(objects)
                     self.queryArray = _objects
                     self.tableView.reloadData()
                 }
             } else {
-                print("Error")
+                print("No posts")
             }
         }
         

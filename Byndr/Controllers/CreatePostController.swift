@@ -20,16 +20,7 @@ class CreatePostController: UIViewController {
     @IBAction func submitButtonClick(_ sender: UIButton) {
         
         //Prevent submit if empty
-        if((postText.text?.isEmpty)! || postText.text == " "){
-            let alert = UIAlertController( title: "Post Content", message: "Please enter content to post.", preferredStyle: UIAlertControllerStyle.alert)
-            
-            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: {(action) in
-                self.dismiss(animated: true, completion: nil)
-            }))
-            
-            self.present(alert, animated: true, completion: nil)
-        }
-        else{
+        if(!(postText.text?.isEmpty)!){
             let post = PFObject(className: "Post")
             post["postText"] = postText.text!
             post["user"] = PFUser.current()!
@@ -37,12 +28,23 @@ class CreatePostController: UIViewController {
             post.saveInBackground{
                 (success:Bool, error: Error?) in
                 if(success){
-                    print("Success")
+                    let storyBoard: UIStoryboard = UIStoryboard(name: "App", bundle: nil)
+                    let newViewController = storyBoard.instantiateViewController(withIdentifier: "appstoryboard")
+                    self.present(newViewController, animated: true, completion: nil)
                 }
                 else{
                     print("Error")
                 }
             }
+        }
+        else{
+            let alert = UIAlertController( title: "Post Content", message: "Please enter content to post.", preferredStyle: UIAlertControllerStyle.alert)
+            
+            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: {(action) in
+                self.dismiss(animated: true, completion: nil)
+            }))
+            
+            self.present(alert, animated: true, completion: nil)
         }
     }
     override func viewDidLoad() {
