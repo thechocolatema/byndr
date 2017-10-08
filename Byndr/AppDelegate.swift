@@ -8,6 +8,7 @@
  */
 
 import UIKit
+import IoniconsSwift
 import UserNotifications
 
 import Parse
@@ -95,6 +96,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             // set the window's root view controller to be your new navigation controller
             self.window?.rootViewController = interestVC
         }
+        
+        let backImage = Ionicons.arrowLeftC.image(30, color: UIColor.black).withRenderingMode(UIImageRenderingMode.alwaysOriginal)
+        let color = UIColor.black
+        let font = UIFont(name: "Helvetica", size: 20)!
+        
+        let attributes: [NSAttributedStringKey : Any] = [
+            .font: font,
+            .foregroundColor: color
+        ]
+        
+        
+        // Do any additional setup after loading the view.
+        UINavigationBar.appearance().barTintColor = UIColor.white
+        UINavigationBar.appearance().titleTextAttributes = attributes
+        UINavigationBar.appearance().backIndicatorImage = backImage
+        UINavigationBar.appearance().backIndicatorTransitionMaskImage = backImage
+        UIBarButtonItem.appearance().setBackButtonTitlePositionAdjustment(UIOffsetMake(0, -40.0), for: .default)
+        
         return true
     }
     

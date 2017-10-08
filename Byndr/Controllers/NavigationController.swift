@@ -7,24 +7,13 @@
 //
 
 import UIKit
+import IoniconsSwift
 
 class NavigationController: UINavigationController {
-
+    var grayColor = UIColor(red:0.89, green:0.90, blue:0.93, alpha:1.0)
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        let color = UIColor.black
-        let font = UIFont(name: "Helvetica-bold", size: 20)!
-        
-        let attributes: [NSAttributedStringKey : Any] = [
-            .font: font,
-            .foregroundColor: color
-        ]
-        
-        
-        // Do any additional setup after loading the view.
-        UINavigationBar.appearance().barTintColor = UIColor.white
-        UINavigationBar.appearance().titleTextAttributes = attributes
     }
 
     override func didReceiveMemoryWarning() {
