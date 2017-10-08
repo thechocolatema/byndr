@@ -18,22 +18,44 @@ class FeedTableViewCell: UITableViewCell {
     @IBOutlet weak var likeButton: UIImageView!
     @IBOutlet weak var optionButton: UIImageView!    
     @IBOutlet weak var repostButton: UIImageView!
+    @IBOutlet weak var likeCount: UILabel!
+    @IBOutlet weak var repostCount: UILabel!
     
     @objc func imageTapped(recognizer: UITapGestureRecognizer) {
         
         let tappedImage = recognizer.view as! UIImageView
         
+        //After like button is pressed
         if(tappedImage == likeButton){
-            likeButton.image = Ionicons.iosHeart.image(20, color: UIColor.red).withRenderingMode(UIImageRenderingMode.alwaysOriginal)
+            likeCount.isHidden = false
+            likeButton.image = Ionicons.iosHeart.image(25, color: UIColor.red).withRenderingMode(UIImageRenderingMode.alwaysOriginal)
+            var totalLikes = Int(likeCount.text!)!+1
+            likeCount.text = "\(totalLikes)"
         }
         if(tappedImage == repostButton){
-            print("YUeeeSSS")
+            repostCount.isHidden = false
+            repostButton.image = Ionicons.iosReload.image(25, color: UIColor.red).withRenderingMode(UIImageRenderingMode.alwaysOriginal)
+            var totalReposts = Int(repostCount.text!)!+1
+            repostCount.text = "\(totalReposts)"
         }
     }
     
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        
+        //Load like count and repost count
+        
+        if(likeCount.text == "0"){
+            print("NOIJNB ")
+            likeCount.isHidden = true
+        }
+        
+        if(repostCount.text == "0"){
+            print("NOIJNB ")
+            repostCount.isHidden = true
+        }
+        
         likeButton.isUserInteractionEnabled = true
         repostButton.isUserInteractionEnabled = true
         
@@ -48,9 +70,9 @@ class FeedTableViewCell: UITableViewCell {
         feedImage.layer.cornerRadius = 0.5 * feedImage.bounds.size.width
         feedImage.clipsToBounds = true
         
-        likeButton.image = Ionicons.iosHeartOutline.image(20, color: UIColor.black).withRenderingMode(UIImageRenderingMode.alwaysOriginal)
-        repostButton.image = Ionicons.iosReload.image(20, color: UIColor.black).withRenderingMode(UIImageRenderingMode.alwaysOriginal)
-        optionButton.image = Ionicons.chevronDown.image(20, color: UIColor.gray).withRenderingMode(UIImageRenderingMode.alwaysOriginal)
+        likeButton.image = Ionicons.iosHeartOutline.image(25, color: UIColor.black).withRenderingMode(UIImageRenderingMode.alwaysOriginal)
+        repostButton.image = Ionicons.iosReload.image(25, color: UIColor.black).withRenderingMode(UIImageRenderingMode.alwaysOriginal)
+        optionButton.image = Ionicons.chevronDown.image(10, color: UIColor.gray).withRenderingMode(UIImageRenderingMode.alwaysOriginal)
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {
