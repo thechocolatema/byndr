@@ -29,14 +29,37 @@ class FeedTableViewCell: UITableViewCell {
         if(tappedImage == likeButton){
             likeCount.isHidden = false
             likeButton.image = Ionicons.iosHeart.image(25, color: UIColor.red).withRenderingMode(UIImageRenderingMode.alwaysOriginal)
-            var totalLikes = Int(likeCount.text!)!+1
+            let totalLikes = Int(likeCount.text!)!+1
             likeCount.text = "\(totalLikes)"
         }
         if(tappedImage == repostButton){
             repostCount.isHidden = false
             repostButton.image = Ionicons.iosReload.image(25, color: UIColor.red).withRenderingMode(UIImageRenderingMode.alwaysOriginal)
-            var totalReposts = Int(repostCount.text!)!+1
+            let totalReposts = Int(repostCount.text!)!+1
             repostCount.text = "\(totalReposts)"
+        }
+        if(tappedImage == optionButton){
+            //Create the AlertController
+            let actionSheetController: UIAlertController = UIAlertController(title: "Action Sheet", message: "Swiftly Now! Choose an option!", preferredStyle: .actionSheet)
+            
+            //Create and add the Cancel action
+            let cancelAction: UIAlertAction = UIAlertAction(title: "Cancel", style: .cancel) { action -> Void in
+                //Just dismiss the action sheet
+            }
+            actionSheetController.addAction(cancelAction)
+            //Create and add first option action
+            let takePictureAction: UIAlertAction = UIAlertAction(title: "Report Post", style: .default) { action -> Void in
+                //Code for launching the camera goes here
+            }
+            actionSheetController.addAction(takePictureAction)
+            //Create and add a second option action
+            let choosePictureAction: UIAlertAction = UIAlertAction(title: "Delete Post", style: .default) { action -> Void in
+                //Code for picking from camera roll goes here
+            }
+            actionSheetController.addAction(choosePictureAction)
+            
+            self.window?.rootViewController?.present(actionSheetController, animated: true, completion: nil)
+
         }
     }
     
@@ -58,13 +81,15 @@ class FeedTableViewCell: UITableViewCell {
         
         likeButton.isUserInteractionEnabled = true
         repostButton.isUserInteractionEnabled = true
-        
+        optionButton.isUserInteractionEnabled = true
+
         let likedPost = UITapGestureRecognizer(target: self, action: #selector(imageTapped))
-        
         let repostedPost = UITapGestureRecognizer(target: self, action: #selector(imageTapped))
-        
+        let optionPost = UITapGestureRecognizer(target: self, action: #selector(imageTapped))
+
         likeButton.addGestureRecognizer(likedPost)
         repostButton.addGestureRecognizer(repostedPost)
+        optionButton.addGestureRecognizer(optionPost)
 
         feedImage.backgroundColor = UIColor(red:0.95, green:0.95, blue:0.95, alpha:1.0)
         feedImage.layer.cornerRadius = 0.5 * feedImage.bounds.size.width

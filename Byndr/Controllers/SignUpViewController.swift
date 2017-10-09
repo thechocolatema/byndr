@@ -34,9 +34,10 @@ class SignUpViewController: ViewController {
             //Then navigate to the interests page
             let User = PFUser()
             
-            User.username = usernameTextBox.text
+            //Save username as lowercase to prevent duplicates with different casing
+            User.username = usernameTextBox.text?.lowercased()
             User["fullName"] = fullNameTextBox.text
-            User.email = emailTextBox.text
+            User.email = emailTextBox.text?.lowercased()
             User.password = passwordTextBox.text
             
             

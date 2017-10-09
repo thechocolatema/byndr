@@ -33,18 +33,33 @@ class FeedTableViewController: UITableViewController{
         tableView.estimatedRowHeight = 44.0
         self.tableView.rowHeight = UITableViewAutomaticDimension
         
+        print(PFUser.current()?.username! as Any)
+        
         //Get list of posts
         let query = PFQuery(className:"Post")
+        
+        //Get the posts from the current user
+        query.whereKey("username", equalTo:PFUser.current()?.username as! String)
         query.order(byDescending: "createdAt")
         //query.whereKey("username", equalTo:PFUser.current()!.username)
         query.findObjectsInBackground {(objects: [PFObject]?, error: Error?) -> Void in
             if error == nil {
                 //print("USER IS \(PFUser.current()!.username)")
                 if let _objects = objects {
-                    self.queryArray = _objects
+                    //If there are no posts
+                    if((objects?.count)! > 0){
+                        self.queryArray = _objects
+                        self.tableView.reloadData()
+                    }
+                    let cell = self.tableView.dequeueReusableCell(withIdentifier: "Cell") as! FeedTableViewCell
+                    //let object = queryArray[indexPath.row]
+                    
+                    cell.feedContent.text = "gfdsa"
                     self.tableView.reloadData()
-                }
-            } else {
+                    print("FBDJEJEJ")
+                 }
+            }
+            else {
                 print("No posts")
             }
         }
@@ -85,21 +100,27 @@ class FeedTableViewController: UITableViewController{
         //let jsonResult = try JSONSerialization.jsonObject(with: username, options: JSONSerialization.ReadingOptions.mutableContainers) as! [String:Any]
 
         //var name = PFQuery(className: "user")
-        var query = PFUser.query()!
-        query.whereKey("username", equalTo:username)
+        let query = PFUser.query()!
+        
         query.getFirstObjectInBackground { newUser, error in
             if error == nil {
-                //print(newUser!["fullName"])
+                print("FDJKS")
                 let userVariable = newUser!["fullName"]
-                cell.feedName.text = userVariable as! String
+                cell.feedName.text = userVariable as? String
                 
             }
             else{
-                //print("User is \(newUser)")
+                print("User is KDJLS")
             }
         }
         //print(object.object(forKey: "user"))
         
+        if(queryArray.count > 0){
+            print("gfdsqwefgr")
+        }
+        else{
+            print("edcx")
+        }
         return cell
     }
 

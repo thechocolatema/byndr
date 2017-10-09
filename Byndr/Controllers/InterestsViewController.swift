@@ -113,7 +113,7 @@ class InterestsViewController: UIViewController {
                         button.setTitleColor(UIColor.white, for: .selected)
                         button.setImage(checkImage, for: .selected)
                         button.clipsToBounds = true
-                        var buttonCount = CGFloat((button.object.objectId?.count)!)
+                        //var buttonCount = CGFloat((button.object.objectId?.count)!)
                         rowWidth = rowWidth+buttonWidth
                         if(rowWidth > self.view.bounds.width){
                             
