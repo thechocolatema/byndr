@@ -40,6 +40,15 @@ class TabBarController: UITabBarController {
         myTabBarItem3.title = ""
         myTabBarItem3.imageInsets = UIEdgeInsets(top: 6, left: 0, bottom: -6, right: 0)
         
+        for family: String in UIFont.familyNames
+        {
+            print("\(family)")
+            for names: String in UIFont.fontNames(forFamilyName: family)
+            {
+                print("== \(names)")
+            }
+        }
+        
         }
 
     override func didReceiveMemoryWarning() {

@@ -99,7 +99,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let backImage = Ionicons.iosArrowThinLeft.image(30, color: UIColor.black).withRenderingMode(UIImageRenderingMode.alwaysOriginal)
         let color = UIColor.black
-        let font = UIFont(name: "Helvetica", size: 20)!
+        let font = UIFont(name: "Futura", size: 20)!
         
         let attributes: [NSAttributedStringKey : Any] = [
             .font: font,

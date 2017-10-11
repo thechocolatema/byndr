@@ -95,7 +95,7 @@ class FeedTableViewController: UITableViewController{
         cell.feedContent.text = object.object(forKey: "postText") as? String
         
         cell.feedUsername.text = "@\(object.object(forKey: "username") as! String)"
-        cell.feedImage.image = Ionicons.person.image(50, color: UIColor.black).withRenderingMode(UIImageRenderingMode.alwaysOriginal)
+        //cell.feedImage.image = Ionicons.person.image(50, color: UIColor.black).withRenderingMode(UIImageRenderingMode.alwaysOriginal)
         let username = object.object(forKey: "username") as! String
         //let jsonResult = try JSONSerialization.jsonObject(with: username, options: JSONSerialization.ReadingOptions.mutableContainers) as! [String:Any]
 
