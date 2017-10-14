@@ -15,7 +15,17 @@ import Parse
 
 // If you want to use any of the UI components, uncomment this line
 // import ParseUI
-
+extension UIColor {
+    func as1ptImage() -> UIImage {
+        UIGraphicsBeginImageContext(CGSize(width: 1, height: 1))
+        let ctx = UIGraphicsGetCurrentContext()
+        self.setFill()
+        ctx!.fill(CGRect(x: 0, y: 0, width: 1, height: 1))
+        let image = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        return image!
+    }
+}
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
@@ -99,20 +109,40 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let backImage = Ionicons.iosArrowThinLeft.image(30, color: UIColor.black).withRenderingMode(UIImageRenderingMode.alwaysOriginal)
         let color = UIColor.black
-        let font = UIFont(name: "Futura", size: 20)!
-        
-        let attributes: [NSAttributedStringKey : Any] = [
-            .font: font,
+        let largefont = UIFont(name: "Futura", size: 30)!
+        let smallfont = UIFont(name: "Futura", size: 20)!
+
+        let Largeattributes: [NSAttributedStringKey : Any] = [
+            .font: largefont,
+            .foregroundColor: color
+        ]
+        let Smallattributes: [NSAttributedStringKey : Any] = [
+            .font: smallfont,
             .foregroundColor: color
         ]
                 
         // Do any additional setup after loading the view.
+        
         UINavigationBar.appearance().barTintColor = UIColor.white
-        UINavigationBar.appearance().titleTextAttributes = attributes
         UINavigationBar.appearance().backIndicatorImage = backImage
         UINavigationBar.appearance().backIndicatorTransitionMaskImage = backImage
         UIBarButtonItem.appearance().setBackButtonTitlePositionAdjustment(UIOffsetMake(0, -40.0), for: .default)
-            
+        // We can use a 1px image with the color we want for the shadow image
+        UINavigationBar.appearance().shadowImage = UIColor.white.as1ptImage()
+        UITabBar.appearance().barTintColor = UIColor.white
+        
+        // We need to replace the navigation bar's background image as well
+        // in order to make the shadowImage appear. We use the same 1px color technique
+        UINavigationBar.appearance().setBackgroundImage(UIColor.white.as1ptImage(), for: .default)
+        
+        if #available(iOS 11.0, *) {
+            UINavigationBar.appearance().prefersLargeTitles = true
+            UINavigationBar.appearance().largeTitleTextAttributes = Largeattributes
+        } else {
+            // Fallback on earlier versions
+            UINavigationBar.appearance().titleTextAttributes = Smallattributes
+        }
+        
         return true
     }
     

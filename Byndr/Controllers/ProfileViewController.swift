@@ -35,7 +35,7 @@ class ProfileViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        profileImage.image = Ionicons.iosPerson.image(20, color: UIColor.black).withRenderingMode(UIImageRenderingMode.alwaysOriginal)
+        //profileImage.image = Ionicons.iosPerson.image(20, color: UIColor.black).withRenderingMode(UIImageRenderingMode.alwaysOriginal)
     }
 
     override func didReceiveMemoryWarning() {
