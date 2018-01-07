@@ -22,7 +22,7 @@ class ProfileViewController: UIViewController {
         let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default) {
             UIAlertAction in
             //Log out user
-            //PFUser.logOut()
+            PFUser.logOut()
             let interestVC = UIStoryboard(name: "Welcome", bundle: nil).instantiateViewController(withIdentifier: "WelcomeViewController")
             
             self.present(interestVC, animated: false, completion: nil)
