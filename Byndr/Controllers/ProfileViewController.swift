@@ -23,14 +23,14 @@ class ProfileViewController: UIViewController {
         
         let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default) {
             UIAlertAction in
-            let interestVC = UIStoryboard(name: "Welcome", bundle: nil).instantiateViewController(withIdentifier: "WelcomeStoryboard")
+            let interestVC = UIStoryboard(name: "Welcome", bundle: nil).instantiateViewController(withIdentifier: "WelcomeViewController")
             
-            self.navigationController?.present(interestVC, animated: false, completion: nil)
+            self.present(interestVC, animated: false, completion: nil)
+            
+            
         }
         alert.addAction(okAction)
         self.present(alert, animated: true, completion: nil)
-
-    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
