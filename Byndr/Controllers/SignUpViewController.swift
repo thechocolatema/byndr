@@ -63,7 +63,10 @@ class SignUpViewController: ViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        //Make email button focus when page opened
+        emailTextBox.becomeFirstResponder()
+        
         // Do any additional setup after loading the view.
     }
 
