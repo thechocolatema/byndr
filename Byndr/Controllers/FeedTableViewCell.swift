@@ -39,6 +39,7 @@ class FeedTableViewCell: UITableViewCell {
             repostCount.text = "\(totalReposts)"
         }
         if(tappedImage == optionButton){
+            print("Option")
             //Create the AlertController
             let actionSheetController: UIAlertController = UIAlertController(title: "Action Sheet", message: "Swiftly Now! Choose an option!", preferredStyle: .actionSheet)
             

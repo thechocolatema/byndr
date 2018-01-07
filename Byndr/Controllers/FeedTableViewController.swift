@@ -33,7 +33,7 @@ class FeedTableViewController: UITableViewController{
         tableView.estimatedRowHeight = 44.0
         self.tableView.rowHeight = UITableViewAutomaticDimension
         
-        print(PFUser.current()?.username! as Any)
+        //print(PFUser.current()?.username! as Any)
         
         //Get list of posts
         let query = PFQuery(className:"Post")
@@ -56,7 +56,6 @@ class FeedTableViewController: UITableViewController{
                     
                     cell.feedContent.text = "gfdsa"
                     self.tableView.reloadData()
-                    print("FBDJEJEJ")
                  }
             }
             else {

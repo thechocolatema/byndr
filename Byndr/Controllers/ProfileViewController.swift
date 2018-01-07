@@ -17,15 +17,17 @@ class ProfileViewController: UIViewController {
 
     @IBAction func logOutButtonClick(_ sender: UIButton) {
         //Log out user
-        PFUser.logOut()
+        //PFUser.logOut()
         let alert = UIAlertController( title: "Successful", message: "You have successfully logged out", preferredStyle: UIAlertControllerStyle.alert)
         
         
         let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default) {
             UIAlertAction in
-            let interestVC = UIStoryboard(name: "Welcome", bundle: nil).instantiateViewController(withIdentifier: "WelcomeStoryboard")
+            let interestVC = UIStoryboard(name: "Welcome", bundle: nil).instantiateViewController(withIdentifier: "WelcomeViewController")
             
-            self.navigationController?.present(interestVC, animated: false, completion: nil)
+            self.present(interestVC, animated: false, completion: nil)
+            
+            
         }
         alert.addAction(okAction)
         self.present(alert, animated: true, completion: nil)
