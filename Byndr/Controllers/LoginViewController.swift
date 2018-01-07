@@ -50,6 +50,8 @@ class LoginViewController: UIViewController {
         bottomBorder.backgroundColor = UIColor.gray.cgColor
         emailTextBox.layer.addSublayer(bottomBorder)
         print(PFUser.current()?.username as Any)
+        
+        emailTextBox.becomeFirstResponder()
         // Do any additional setup after loading the view.
     }
 

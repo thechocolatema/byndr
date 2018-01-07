@@ -16,19 +16,26 @@ class ProfileViewController: UIViewController {
     @IBOutlet weak var logOutButton: UIButton!
 
     @IBAction func logOutButtonClick(_ sender: UIButton) {
-        let alert = UIAlertController( title: "Successful", message: "You have successfully logged out", preferredStyle: UIAlertControllerStyle.alert)
+        let alert = UIAlertController( title: "Log out", message: "Are you sure you want to log out?", preferredStyle: UIAlertControllerStyle.alert)
         
         
-        let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default) {
+        let okAction = UIAlertAction(title: "Yes", style: UIAlertActionStyle.default) {
             UIAlertAction in
             //Log out user
-            PFUser.logOut()
+            //PFUser.logOut()
             let interestVC = UIStoryboard(name: "Welcome", bundle: nil).instantiateViewController(withIdentifier: "WelcomeViewController")
             
             self.present(interestVC, animated: false, completion: nil)
             
             
         }
+        let cancelAction = UIAlertAction(title: "Yes", style: UIAlertActionStyle.default) {
+            UIAlertAction in
+            
+            
+            
+        }
+        alert.addAction(cancelAction)
         alert.addAction(okAction)
         self.present(alert, animated: true, completion: nil)
     }
