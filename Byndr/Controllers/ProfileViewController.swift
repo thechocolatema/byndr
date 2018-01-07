@@ -22,14 +22,14 @@ class ProfileViewController: UIViewController {
         let okAction = UIAlertAction(title: "Yes", style: UIAlertActionStyle.default) {
             UIAlertAction in
             //Log out user
-            //PFUser.logOut()
+            PFUser.logOut()
             let interestVC = UIStoryboard(name: "Welcome", bundle: nil).instantiateViewController(withIdentifier: "WelcomeViewController")
             
             self.present(interestVC, animated: false, completion: nil)
             
             
         }
-        let cancelAction = UIAlertAction(title: "Yes", style: UIAlertActionStyle.default) {
+        let cancelAction = UIAlertAction(title: "Cancel", style: UIAlertActionStyle.default) {
             UIAlertAction in
             
             

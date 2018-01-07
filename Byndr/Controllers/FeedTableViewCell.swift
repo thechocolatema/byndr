@@ -9,6 +9,23 @@
 import UIKit
 import IoniconsSwift
 
+extension UIApplication {
+    class func topViewController(base: UIViewController? = UIApplication.shared.keyWindow?.rootViewController) -> UIViewController? {
+        if let nav = base as? UINavigationController {
+            return topViewController(base: nav.visibleViewController)
+        }
+        if let tab = base as? UITabBarController {
+            if let selected = tab.selectedViewController {
+                return topViewController(base: selected)
+            }
+        }
+        if let presented = base?.presentedViewController {
+            return topViewController(base: presented)
+        }
+        return base
+    }
+}
+
 class FeedTableViewCell: UITableViewCell {
 
     @IBOutlet weak var feedImage: UIImageView!
@@ -40,26 +57,35 @@ class FeedTableViewCell: UITableViewCell {
         }
         if(tappedImage == optionButton){
             //Create the AlertController
-            let actionSheetController: UIAlertController = UIAlertController(title: "Action Sheet", message: "Swiftly Now! Choose an option!", preferredStyle: .actionSheet)
+            let alert: UIAlertController =  UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
             
             //Create and add the Cancel action
             let cancelAction: UIAlertAction = UIAlertAction(title: "Cancel", style: .cancel) { action -> Void in
                 //Just dismiss the action sheet
             }
-            actionSheetController.addAction(cancelAction)
+            
             //Create and add first option action
-            let takePictureAction: UIAlertAction = UIAlertAction(title: "Report Post", style: .default) { action -> Void in
+            let reportAction: UIAlertAction = UIAlertAction(title: "Report Post", style: .default) { action -> Void in
                 //Code for launching the camera goes here
             }
-            actionSheetController.addAction(takePictureAction)
+            
             //Create and add a second option action
-            let choosePictureAction: UIAlertAction = UIAlertAction(title: "Delete Post", style: .default) { action -> Void in
+            let deleteAction: UIAlertAction = UIAlertAction(title: "Delete Post", style: .default) { action -> Void in
                 //Code for picking from camera roll goes here
             }
-            actionSheetController.addAction(choosePictureAction)
+            alert.addAction(cancelAction)
+            alert.addAction(reportAction)
+            alert.addAction(deleteAction)
             
-            self.window?.rootViewController?.present(actionSheetController, animated: true, completion: nil)
+            //self.window?.rootViewController?.present(alert, animated: true, completion: nil)
+            //print(self.window?.rootViewController)
+            var topController: UIViewController? = UIApplication.shared.keyWindow?.rootViewController
+            if ((topController?.presentedViewController) != nil) {
+                topController = topController?.presentedViewController
+            }
+            UIApplication.topViewController()?.present(alert, animated: true, completion: nil)
 
+            
         }
     }
     

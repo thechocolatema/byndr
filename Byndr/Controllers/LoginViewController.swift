@@ -31,9 +31,9 @@ class LoginViewController: UIViewController {
             PFUser.logInWithUsername(inBackground: userEmail!, password: userPassword!) { (user, error) -> Void in
                 if error == nil {
                     print("succesful")
-                    let storyBoard: UIStoryboard = UIStoryboard(name: "App", bundle: nil)
-                    let newViewController = storyBoard.instantiateViewController(withIdentifier: "appstoryboard")
-                    self.present(newViewController, animated: true, completion: nil)
+                    let newVC = UIStoryboard(name: "App", bundle: nil).instantiateViewController(withIdentifier: "appstoryboard")
+                    UIApplication.topViewController()?.present(newVC, animated: true, completion: nil)
+
                 } else {
                     self.createAlert(title: "Error", message: "Invalid username or Password")
                 }
@@ -43,13 +43,21 @@ class LoginViewController: UIViewController {
             
         }
     }
+    
+    func lineInput(buttonName:UITextField){
+        let bottomBorder = CALayer()
+        bottomBorder.frame = CGRect(x:0.0, y:buttonName.frame.size.height - 1, width:buttonName.frame.size.width, height:1.0);
+        bottomBorder.backgroundColor = UIColor.gray.cgColor
+        buttonName.layer.addSublayer(bottomBorder)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        let bottomBorder = CALayer()
-        bottomBorder.frame = CGRect(x:0.0, y:emailTextBox.frame.size.height - 1, width:emailTextBox.frame.size.width, height:1.0);
-        bottomBorder.backgroundColor = UIColor.gray.cgColor
-        emailTextBox.layer.addSublayer(bottomBorder)
-        print(PFUser.current()?.username as Any)
+        
+        lineInput(buttonName: emailTextBox)
+        lineInput(buttonName: passwordTextBox)
+
+        //print(PFUser.current()?.username as Any)
         
         emailTextBox.becomeFirstResponder()
         // Do any additional setup after loading the view.
