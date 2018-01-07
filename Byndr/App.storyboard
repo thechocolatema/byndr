@@ -286,7 +286,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="7j5-hj-ZLj">
             <objects>
-                <tabBarController id="RZd-8k-QZc" customClass="TabBarController" customModule="Byndr" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="appstoryboard" id="RZd-8k-QZc" customClass="TabBarController" customModule="Byndr" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="tgp-sS-ZgW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -306,7 +306,7 @@
         <!--Feed-->
         <scene sceneID="qwx-cA-vwP">
             <objects>
-                <navigationController storyboardIdentifier="appstoryboard" automaticallyAdjustsScrollViewInsets="NO" id="NfY-1c-Xzh" customClass="AppController" customModule="Byndr" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="NfY-1c-Xzh" customClass="AppController" customModule="Byndr" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Feed" id="Ykn-VV-AcL"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="s0v-15-dnu">

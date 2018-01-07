@@ -32,8 +32,7 @@ class LoginViewController: UIViewController {
                 if error == nil {
                     print("succesful")
                     let newVC = UIStoryboard(name: "App", bundle: nil).instantiateViewController(withIdentifier: "appstoryboard")
-                    UIApplication.topViewController()?.present(newVC, animated: true, completion: nil)
-
+                    self.present(newVC, animated: true, completion: nil)
                 } else {
                     self.createAlert(title: "Error", message: "Invalid username or Password")
                 }
