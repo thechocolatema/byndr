@@ -45,10 +45,10 @@ class LoginViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        let bottomBorder = CALayer()
-        bottomBorder.frame = CGRect(x:0.0, y:emailTextBox.frame.size.height - 1, width:emailTextBox.frame.size.width, height:1.0);
-        bottomBorder.backgroundColor = UIColor.gray.cgColor
-        emailTextBox.layer.addSublayer(bottomBorder)
+        //let bottomBorder = CALayer()
+        //bottomBorder.frame = CGRect(x:0.0, y:emailTextBox.frame.size.height - 1, width:emailTextBox.frame.size.width, height:1.0);
+        //bottomBorder.backgroundColor = UIColor.gray.cgColor
+       // emailTextBox.layer.addSublayer(bottomBorder)
         print(PFUser.current()?.username as Any)
         
         emailTextBox.becomeFirstResponder()

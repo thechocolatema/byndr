@@ -17,8 +17,12 @@ class WelcomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Do any additional setup after loading the view.
         
+        //Set title to blank to prevent crash when navigating back
+        self.title = ""
+        
+        // Do any additional setup after loading the view.
+        self.navigationController?.title="YEs"
         //Check if user logged in
         let currentUser = PFUser.current()
         if (currentUser?.username != nil) {

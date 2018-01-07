@@ -114,7 +114,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         let Largeattributes: [NSAttributedStringKey : Any] = [
             .font: largefont,
-            .foregroundColor: color
+            .foregroundColor: color,
         ]
         let Smallattributes: [NSAttributedStringKey : Any] = [
             .font: smallfont,
@@ -138,7 +138,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if #available(iOS 11.0, *) {
             UINavigationBar.appearance().prefersLargeTitles = true
             UINavigationBar.appearance().largeTitleTextAttributes = Largeattributes
-        } else {
+        } else {            
             // Fallback on earlier versions
             UINavigationBar.appearance().titleTextAttributes = Smallattributes
         }
