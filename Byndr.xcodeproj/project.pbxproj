@@ -36,6 +36,8 @@
 		97A30C281F7D9733006EB2AF /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A30C271F7D9733006EB2AF /* NavigationController.swift */; };
 		97A30C2A1F7D9966006EB2AF /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A30C291F7D9966006EB2AF /* TabBarController.swift */; };
 		9C777126127EFE8B216B0CE0 /* Pods_Byndr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FFEB97836D39EB3910D5D8B /* Pods_Byndr.framework */; };
+		CC5D1B742003D0D600D28277 /* Category.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC5D1B732003D0D600D28277 /* Category.storyboard */; };
+		CC7D1C5D2003FD4E0030DAFD /* CategoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7D1C5C2003FD4E0030DAFD /* CategoryController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,6 +76,8 @@
 		979977AF1F841F3F009540B3 /* CreatePostController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostController.swift; sourceTree = "<group>"; };
 		97A30C271F7D9733006EB2AF /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		97A30C291F7D9966006EB2AF /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		CC5D1B732003D0D600D28277 /* Category.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Category.storyboard; sourceTree = "<group>"; };
+		CC7D1C5C2003FD4E0030DAFD /* CategoryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +141,7 @@
 				814C3AC61B69877600E307BB /* Welcome.storyboard */,
 				976A39491F7CC24B006FF3EB /* App.storyboard */,
 				974DC5021F7EB6BB00D4A2F4 /* Button.swift */,
+				CC5D1B732003D0D600D28277 /* Category.storyboard */,
 			);
 			path = Byndr;
 			sourceTree = "<group>";
@@ -179,6 +184,7 @@
 				9797AA0B1F86141100A975B3 /* ProfileViewController.swift */,
 				978F431C1F882AEF0094496B /* LoginViewController.swift */,
 				978F431E1F882E7A0094496B /* AppController.swift */,
+				CC7D1C5C2003FD4E0030DAFD /* CategoryController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -267,6 +273,7 @@
 				814C3ACB1B69877600E307BB /* Images.xcassets in Resources */,
 				974BA26C1F8DD9AA00BC9A8E /* Rubik-Bold.ttf in Resources */,
 				974BA26E1F8DDB6D00BC9A8E /* Rubik-Light.ttf in Resources */,
+				CC5D1B742003D0D600D28277 /* Category.storyboard in Resources */,
 				976A394A1F7CC24B006FF3EB /* App.storyboard in Resources */,
 				974BA26A1F8DD9AA00BC9A8E /* Rubik-Medium.ttf in Resources */,
 			);
@@ -344,6 +351,7 @@
 				9797AA081F849CC900A975B3 /* FeedTableViewController.swift in Sources */,
 				81BA814B1A49DA1800E65899 /* AppDelegate.swift in Sources */,
 				976A39541F7CCC15006FF3EB /* InterestsViewController.swift in Sources */,
+				CC7D1C5D2003FD4E0030DAFD /* CategoryController.swift in Sources */,
 				978F431D1F882AEF0094496B /* LoginViewController.swift in Sources */,
 				9797AA0A1F84B81F00A975B3 /* FeedTableViewCell.swift in Sources */,
 				978F431F1F882E7A0094496B /* AppController.swift in Sources */,

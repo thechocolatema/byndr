@@ -136,7 +136,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UINavigationBar.appearance().setBackgroundImage(UIColor.white.as1ptImage(), for: .default)
         
         if #available(iOS 11.0, *) {
-            UINavigationBar.appearance().prefersLargeTitles = true
+            UINavigationBar.appearance().prefersLargeTitles = false
             UINavigationBar.appearance().largeTitleTextAttributes = Largeattributes
         } else {            
             // Fallback on earlier versions

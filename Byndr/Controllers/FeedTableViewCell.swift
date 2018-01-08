@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Parse
 import IoniconsSwift
 
 extension UIApplication {
@@ -26,6 +27,12 @@ extension UIApplication {
     }
 }
 
+//Cell Protocol
+protocol CellDelegate {
+    func clickedCategory(name: String)
+    func deletePost()
+}
+
 class FeedTableViewCell: UITableViewCell {
 
     @IBOutlet weak var feedImage: UIImageView!
@@ -37,7 +44,16 @@ class FeedTableViewCell: UITableViewCell {
     @IBOutlet weak var repostButton: UIImageView!
     @IBOutlet weak var likeCount: UILabel!
     @IBOutlet weak var repostCount: UILabel!
+    @IBOutlet weak var postCategory: UIButton!
     
+    var postId: String = ""
+    var indexPath: IndexPath = []
+    var cellDelegate: CellDelegate!
+    
+    @IBAction func categoryClick(_ sender: UIButton) {
+        let category: String = sender.titleLabel!.text!
+        cellDelegate.clickedCategory(name: category)
+    }
     @objc func imageTapped(recognizer: UITapGestureRecognizer) {
         
         let tappedImage = recognizer.view as! UIImageView
@@ -72,6 +88,16 @@ class FeedTableViewCell: UITableViewCell {
             //Create and add a second option action
             let deleteAction: UIAlertAction = UIAlertAction(title: "Delete Post", style: .default) { action -> Void in
                 //Code for picking from camera roll goes here
+                let query = PFQuery(className: "Post")
+                query.getObjectInBackground(withId: self.postId) { (obj, err) -> Void in
+                    if err != nil {
+                        //handle error
+                    } else {
+                        //print(self.postId)
+                        self.cellDelegate.deletePost()
+                        //obj!.deleteInBackground()
+                    }
+                }
             }
             alert.addAction(cancelAction)
             alert.addAction(reportAction)
@@ -84,8 +110,6 @@ class FeedTableViewCell: UITableViewCell {
                 topController = topController?.presentedViewController
             }
             UIApplication.topViewController()?.present(alert, animated: true, completion: nil)
-
-            
         }
     }
     

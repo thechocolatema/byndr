@@ -28,6 +28,11 @@ class FeedTableViewController: UITableViewController{
         tableView.delegate = self
         tableView.dataSource = self
         
+        //Set title to blank to prevent crash when navigating back
+        //print("Title is \(self.navigationItem.title!)")
+        
+        //Set title to blank to prevent crash when navigating back
+        self.navigationItem.title = "Feed"
         //self.tableView.estimatedRowHeight = 80
         //self.tableView.rowHeight = 100
         tableView.estimatedRowHeight = 44.0
@@ -52,11 +57,13 @@ class FeedTableViewController: UITableViewController{
                         self.tableView.reloadData()
                     }
                     let cell = self.tableView.dequeueReusableCell(withIdentifier: "Cell") as! FeedTableViewCell
-                    //let object = queryArray[indexPath.row]
                     
+                    
+                    //let object = queryArray[indexPath.row]
+                    cell.cellDelegate = self
                     cell.feedContent.text = "gfdsa"
                     self.tableView.reloadData()
-                    print("FBDJEJEJ")
+                    print(self.queryArray)
                  }
             }
             else {
@@ -104,10 +111,13 @@ class FeedTableViewController: UITableViewController{
         
         query.getFirstObjectInBackground { newUser, error in
             if error == nil {
-                print("FDJKS")
+                print("id: \(object.objectId!)")
                 let userVariable = newUser!["fullName"]
                 cell.feedName.text = userVariable as? String
+                cell.postId = object.objectId!
+                cell.indexPath = indexPath
                 
+                cell.cellDelegate = self
             }
             else{
                 print("User is KDJLS")
@@ -116,7 +126,6 @@ class FeedTableViewController: UITableViewController{
         //print(object.object(forKey: "user"))
         
         if(queryArray.count > 0){
-            print("gfdsqwefgr")
         }
         else{
             print("edcx")
@@ -169,4 +178,18 @@ class FeedTableViewController: UITableViewController{
     }
     */
 
+}
+
+extension FeedTableViewController: CellDelegate{
+    func clickedCategory(name: String) {
+        let newVC = UIStoryboard(name: "Category", bundle: nil).instantiateViewController(withIdentifier: "categoryStoryboard")
+        //self.present(newVC, animated: true, completion: nil)
+        self.navigationController?.pushViewController(newVC, animated: true)
+    }
+    
+    func deletePost() {
+        print("Deleted")
+    }
+    
+    
 }
