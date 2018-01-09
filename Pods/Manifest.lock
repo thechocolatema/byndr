@@ -1,7 +1,9 @@
 PODS:
+  - GrowingTextView (0.5.4)
   - IoniconsSwift (2.1.4)
 
 DEPENDENCIES:
+  - GrowingTextView (~> 0.5.4)
   - IoniconsSwift (from `http://github.com/tidwall/IoniconsSwift.git`, branch `master`)
 
 EXTERNAL SOURCES:
@@ -15,8 +17,9 @@ CHECKOUT OPTIONS:
     :git: http://github.com/tidwall/IoniconsSwift.git
 
 SPEC CHECKSUMS:
+  GrowingTextView: 0615429affef558cbbb610aa6f9baf19b027fdbe
   IoniconsSwift: a9034803dfe59ec48a73c95b812c67afdfa3ed08
 
-PODFILE CHECKSUM: be45f741416260ff577b77051ef1f771a017cc2e
+PODFILE CHECKSUM: 037c57770d902e6dec7b777a2e1d61de5f5e4b01
 
 COCOAPODS: 1.3.1

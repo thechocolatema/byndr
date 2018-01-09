@@ -14,13 +14,13 @@ class FeedTableViewController: UITableViewController{
     //var totalPosts = 0
     var queryArray: [PFObject] = []
 
-    func rectForText(text: String, font: UIFont, maxSize: CGSize) -> CGSize {
-        let attrString = NSAttributedString.init(string: text, attributes: [NSAttributedStringKey.font:font])
-        let rect = attrString.boundingRect(with: maxSize, options: NSStringDrawingOptions.usesLineFragmentOrigin, context: nil)
-        //let size = CGSizeMake(rect.size.width, rect.size.height)
-        let size = CGSize(width: rect.size.width, height: rect.size.height)
-        return size
-    }
+//    func rectForText(text: String, font: UIFont, maxSize: CGSize) -> CGSize {
+//        let attrString = NSAttributedString.init(string: text, attributes: [NSAttributedStringKey.font:font])
+//        let rect = attrString.boundingRect(with: maxSize, options: NSStringDrawingOptions.usesLineFragmentOrigin, context: nil)
+//        //let size = CGSizeMake(rect.size.width, rect.size.height)
+//        let size = CGSize(width: rect.size.width, height: rect.size.height)
+//        return size
+//    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

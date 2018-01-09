@@ -9,10 +9,11 @@
 import UIKit
 import Parse
 import IoniconsSwift
+import GrowingTextView
 
 class CreatePostController: UIViewController {
 
-    @IBOutlet weak var postText: UITextField!
+    @IBOutlet weak var postText: UITextView!
     @IBOutlet weak var profileName: UILabel!
     @IBOutlet weak var username: UILabel!
     @IBOutlet weak var submitButton: UIButton!
@@ -49,6 +50,8 @@ class CreatePostController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        postText.delegate = self as? UITextViewDelegate
                 
         let query: PFUser = try! PFQuery.getUserObject(withId: PFUser.current()!.objectId!)
         print(query["fullName"])

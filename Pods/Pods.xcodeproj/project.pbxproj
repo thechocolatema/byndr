@@ -7,51 +7,70 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		01DA5E8BD538718902F3A79D69D9888D /* Pods-Byndr-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A07D3E4A0A66A0FAE97C667A7CFD6815 /* Pods-Byndr-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3B5DB4A99B9A189CE41944711D8A562F /* ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F6D47A072A3DCEA1F5ADBEF8A3EA398E /* ionicons.ttf */; };
-		4E2D585AB5F48C559E97098E71C691AF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
-		5C0E7C4F366FDFED5F605FC54D732B74 /* IoniconsSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C17216FCA36E3494C8BF95D588564C4 /* IoniconsSwift-dummy.m */; };
-		8FFA233D258412199CA01FA5E31A0B12 /* Pods-Byndr-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A48D11E55890FFD89E782BCF5B36CD61 /* Pods-Byndr-dummy.m */; };
-		A4AE6E7FEBD36A07FC607DE510BBF1DC /* IoniconsSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BDA9F8F650A08491297D0E5FD1C9F634 /* IoniconsSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0373B0B2C7C5AE6F08B26A0F474B01B2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		1B479C73B015D794EA266528AB3DD675 /* GrowingTextView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B5FF2B4639D664EA2833F5821A2945A /* GrowingTextView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1B96C686E0BD23F6BF7AECE1A52EF1F5 /* Pods-Byndr-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A07D3E4A0A66A0FAE97C667A7CFD6815 /* Pods-Byndr-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B5DB4A99B9A189CE41944711D8A562F /* ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3AC3BEA16EC84C5B30AABB220245BAD9 /* ionicons.ttf */; };
+		512B3A0DCA239BCB79DF9E8E3BF38D76 /* Pods-Byndr-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A48D11E55890FFD89E782BCF5B36CD61 /* Pods-Byndr-dummy.m */; };
+		55BDF6E8402892504C677611F5A983A6 /* GrowingTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5EF23AEEAB5463D683E8BE001EF170 /* GrowingTextView.swift */; };
+		5C0E7C4F366FDFED5F605FC54D732B74 /* IoniconsSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0451CD080E16DD220530163D2E7B5E84 /* IoniconsSwift-dummy.m */; };
+		A4AE6E7FEBD36A07FC607DE510BBF1DC /* IoniconsSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A9F0F0C9D148F645378CF66BC7361F62 /* IoniconsSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A8CD9AED4E5E9F8B4E8DFC984E59A174 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */; };
+		AB687909577B7EAE55098B7A2762D7F7 /* GrowingTextView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C01DC43987B83753DB9C1908012F116 /* GrowingTextView-dummy.m */; };
 		AD66388D39DB693FAE5490CAE3F63561 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
-		C0667CA76A7C9FF2F6AFF84168E14EFE /* ionicons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F5ED0A123EF7B7D8D96656A11FFD88 /* ionicons.swift */; };
+		C0667CA76A7C9FF2F6AFF84168E14EFE /* ionicons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A787B4CBF2F5C4EFD17579EF84374B9 /* ionicons.swift */; };
+		F90B4C04836EE4824EEEEF567329B84E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		2E8B26DA728DCCBBCE793CD48323262C /* PBXContainerItemProxy */ = {
+		666A95BE49640B4702BE6447161A587D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 1B5AB2C856EB68E3ECE8C535BF5957A0;
 			remoteInfo = IoniconsSwift;
 		};
+		9E624DF3151674D8D2B3D5395E4D52C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ACEF46F3B8A411DED7BF5C736506D068;
+			remoteInfo = GrowingTextView;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0451CD080E16DD220530163D2E7B5E84 /* IoniconsSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "IoniconsSwift-dummy.m"; sourceTree = "<group>"; };
 		0CBA5BD4E4F1ACF7A7D99B21D183AA2A /* Pods-Byndr.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Byndr.debug.xcconfig"; sourceTree = "<group>"; };
-		203C212FC33E3A2AA253615A65D9F453 /* Pods_Byndr.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Byndr.framework; path = "Pods-Byndr.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		222BFAA03737630B7C7C2A24F7D382B0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3AC3BEA16EC84C5B30AABB220245BAD9 /* ionicons.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = ionicons.ttf; path = IoniconsSwift/ionicons.ttf; sourceTree = "<group>"; };
+		3C01DC43987B83753DB9C1908012F116 /* GrowingTextView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GrowingTextView-dummy.m"; sourceTree = "<group>"; };
 		427E91C5361A3A9D8D0D927EAB851CE7 /* Pods-Byndr-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Byndr-acknowledgements.plist"; sourceTree = "<group>"; };
-		5C17216FCA36E3494C8BF95D588564C4 /* IoniconsSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "IoniconsSwift-dummy.m"; sourceTree = "<group>"; };
-		76844232C018656AEE6CFC28714F6882 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B5FF2B4639D664EA2833F5821A2945A /* GrowingTextView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GrowingTextView-umbrella.h"; sourceTree = "<group>"; };
+		544592E48E40B8A4B177FF6E4C1C3BDA /* IoniconsSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = IoniconsSwift.framework; path = IoniconsSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		59CEF6ACC732025B9F80348C4276CB2A /* IoniconsSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = IoniconsSwift.modulemap; sourceTree = "<group>"; };
+		5D684BF56BBD9537C582AD3DF7D05EBD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6A787B4CBF2F5C4EFD17579EF84374B9 /* ionicons.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ionicons.swift; path = IoniconsSwift/ionicons.swift; sourceTree = "<group>"; };
+		7C576B42C8BF40417D5922202F686C8A /* GrowingTextView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GrowingTextView.xcconfig; sourceTree = "<group>"; };
 		80AC628AD1A201D5E59D335DBC8EC5C7 /* Pods-Byndr-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Byndr-frameworks.sh"; sourceTree = "<group>"; };
 		83F50872C15C02A12B231C0B20524DE9 /* Pods-Byndr-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Byndr-resources.sh"; sourceTree = "<group>"; };
-		88F5ED0A123EF7B7D8D96656A11FFD88 /* ionicons.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ionicons.swift; path = IoniconsSwift/ionicons.swift; sourceTree = "<group>"; };
+		84EEDC11EE54D423C131DBFABD5E911B /* IoniconsSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IoniconsSwift-prefix.pch"; sourceTree = "<group>"; };
 		89AD629AC667572B1DF9EB591C3F6879 /* Pods-Byndr.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Byndr.modulemap"; sourceTree = "<group>"; };
-		8DA33810823E4590176E3230E6724ED3 /* IoniconsSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = IoniconsSwift.framework; path = IoniconsSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		97B56CFC0AC7BBC18E804D4ED8B1949D /* GrowingTextView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = GrowingTextView.modulemap; sourceTree = "<group>"; };
 		9BA49D4DF7896B18C7EE44036B145E78 /* Pods-Byndr.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Byndr.release.xcconfig"; sourceTree = "<group>"; };
+		A0560FAFA5FE8895C3F69F6E650611BC /* Pods_Byndr.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Byndr.framework; path = "Pods-Byndr.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A07D3E4A0A66A0FAE97C667A7CFD6815 /* Pods-Byndr-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Byndr-umbrella.h"; sourceTree = "<group>"; };
 		A48D11E55890FFD89E782BCF5B36CD61 /* Pods-Byndr-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Byndr-dummy.m"; sourceTree = "<group>"; };
-		B2771BC23BBCCAE977318454852B0322 /* IoniconsSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = IoniconsSwift.modulemap; sourceTree = "<group>"; };
+		A9F0F0C9D148F645378CF66BC7361F62 /* IoniconsSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IoniconsSwift-umbrella.h"; sourceTree = "<group>"; };
 		B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		BDA9F8F650A08491297D0E5FD1C9F634 /* IoniconsSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IoniconsSwift-umbrella.h"; sourceTree = "<group>"; };
-		BDCCE4F9EAE0D5F24B1F460867C7DF4A /* IoniconsSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IoniconsSwift-prefix.pch"; sourceTree = "<group>"; };
+		D59A74C4C0042524559B43A741353854 /* GrowingTextView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GrowingTextView-prefix.pch"; sourceTree = "<group>"; };
 		D65FBD5CC21B00A126D56F609E5603CF /* Pods-Byndr-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Byndr-acknowledgements.markdown"; sourceTree = "<group>"; };
 		D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		D8F97285C8CF3D788F55E5F4E719E2E9 /* IoniconsSwift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IoniconsSwift.xcconfig; sourceTree = "<group>"; };
-		F6D47A072A3DCEA1F5ADBEF8A3EA398E /* ionicons.ttf */ = {isa = PBXFileReference; includeInIndex = 1; name = ionicons.ttf; path = IoniconsSwift/ionicons.ttf; sourceTree = "<group>"; };
+		DD627FADE5D39FFA632E284E72A794AA /* IoniconsSwift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IoniconsSwift.xcconfig; sourceTree = "<group>"; };
+		E1A480AD142937231104D758A96B16CB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE5EF23AEEAB5463D683E8BE001EF170 /* GrowingTextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GrowingTextView.swift; path = Pod/Classes/GrowingTextView.swift; sourceTree = "<group>"; };
+		F36A0321DC60763175497061ADDAF7FA /* GrowingTextView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GrowingTextView.framework; path = GrowingTextView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,40 +83,37 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C7808DE26E750656D2098E3CF5ED2CFF /* Frameworks */ = {
+		42A6C24D47E8DE3CF577B4540E0F9ED9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4E2D585AB5F48C559E97098E71C691AF /* Foundation.framework in Frameworks */,
+				F90B4C04836EE4824EEEEF567329B84E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		82C6ECE8F870DD25587D90977F442788 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0373B0B2C7C5AE6F08B26A0F474B01B2 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0CF3E47E96F768D4657B80D71C9D23F6 /* Pods */ = {
+		010500F381E3C6551B2E0EC22FF209C3 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				475F97C037DF086293611241A6C31CDA /* IoniconsSwift */,
+				E1A480AD142937231104D758A96B16CB /* Info.plist */,
+				59CEF6ACC732025B9F80348C4276CB2A /* IoniconsSwift.modulemap */,
+				DD627FADE5D39FFA632E284E72A794AA /* IoniconsSwift.xcconfig */,
+				0451CD080E16DD220530163D2E7B5E84 /* IoniconsSwift-dummy.m */,
+				84EEDC11EE54D423C131DBFABD5E911B /* IoniconsSwift-prefix.pch */,
+				A9F0F0C9D148F645378CF66BC7361F62 /* IoniconsSwift-umbrella.h */,
 			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		3574182C80E1748B96049D7E076E8FB5 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				8DA33810823E4590176E3230E6724ED3 /* IoniconsSwift.framework */,
-				203C212FC33E3A2AA253615A65D9F453 /* Pods_Byndr.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		4209E9655EBBF52E51ED7EE86FD243D8 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				F6D47A072A3DCEA1F5ADBEF8A3EA398E /* ionicons.ttf */,
-			);
-			name = Resources;
+			name = "Support Files";
+			path = "../Target Support Files/IoniconsSwift";
 			sourceTree = "<group>";
 		};
 		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
@@ -117,17 +133,6 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		475F97C037DF086293611241A6C31CDA /* IoniconsSwift */ = {
-			isa = PBXGroup;
-			children = (
-				88F5ED0A123EF7B7D8D96656A11FFD88 /* ionicons.swift */,
-				4209E9655EBBF52E51ED7EE86FD243D8 /* Resources */,
-				571E34F7E25CA4FA5CCF0F3C7AF98AE3 /* Support Files */,
-			);
-			name = IoniconsSwift;
-			path = IoniconsSwift;
-			sourceTree = "<group>";
-		};
 		5458B7BFD8DFB321E168F2CADE44FA1A /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -136,18 +141,27 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		571E34F7E25CA4FA5CCF0F3C7AF98AE3 /* Support Files */ = {
+		62679DA2620802181E2DD66F06246233 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				76844232C018656AEE6CFC28714F6882 /* Info.plist */,
-				B2771BC23BBCCAE977318454852B0322 /* IoniconsSwift.modulemap */,
-				D8F97285C8CF3D788F55E5F4E719E2E9 /* IoniconsSwift.xcconfig */,
-				5C17216FCA36E3494C8BF95D588564C4 /* IoniconsSwift-dummy.m */,
-				BDCCE4F9EAE0D5F24B1F460867C7DF4A /* IoniconsSwift-prefix.pch */,
-				BDA9F8F650A08491297D0E5FD1C9F634 /* IoniconsSwift-umbrella.h */,
+				84AEF0C5F66DBEFC91D89959B6FF50F7 /* GrowingTextView */,
+				FC544314DE98FF5A92F6441A4D64C2CD /* IoniconsSwift */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		77850DD980E153022452EC3EDC64B0D6 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				97B56CFC0AC7BBC18E804D4ED8B1949D /* GrowingTextView.modulemap */,
+				7C576B42C8BF40417D5922202F686C8A /* GrowingTextView.xcconfig */,
+				3C01DC43987B83753DB9C1908012F116 /* GrowingTextView-dummy.m */,
+				D59A74C4C0042524559B43A741353854 /* GrowingTextView-prefix.pch */,
+				4B5FF2B4639D664EA2833F5821A2945A /* GrowingTextView-umbrella.h */,
+				5D684BF56BBD9537C582AD3DF7D05EBD /* Info.plist */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/IoniconsSwift";
+			path = "../Target Support Files/GrowingTextView";
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -155,10 +169,28 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
-				0CF3E47E96F768D4657B80D71C9D23F6 /* Pods */,
-				3574182C80E1748B96049D7E076E8FB5 /* Products */,
+				62679DA2620802181E2DD66F06246233 /* Pods */,
+				C22FD1EC3E6333A29370A351E77B737D /* Products */,
 				5458B7BFD8DFB321E168F2CADE44FA1A /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		84AEF0C5F66DBEFC91D89959B6FF50F7 /* GrowingTextView */ = {
+			isa = PBXGroup;
+			children = (
+				EE5EF23AEEAB5463D683E8BE001EF170 /* GrowingTextView.swift */,
+				77850DD980E153022452EC3EDC64B0D6 /* Support Files */,
+			);
+			name = GrowingTextView;
+			path = GrowingTextView;
+			sourceTree = "<group>";
+		};
+		8639F6CCDDFA5F3BBEFD3E1E90D9791F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3AC3BEA16EC84C5B30AABB220245BAD9 /* ionicons.ttf */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		98FFF3588D604018F2792C90E110EA6F /* Pods-Byndr */ = {
@@ -179,6 +211,27 @@
 			path = "Target Support Files/Pods-Byndr";
 			sourceTree = "<group>";
 		};
+		C22FD1EC3E6333A29370A351E77B737D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F36A0321DC60763175497061ADDAF7FA /* GrowingTextView.framework */,
+				544592E48E40B8A4B177FF6E4C1C3BDA /* IoniconsSwift.framework */,
+				A0560FAFA5FE8895C3F69F6E650611BC /* Pods_Byndr.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FC544314DE98FF5A92F6441A4D64C2CD /* IoniconsSwift */ = {
+			isa = PBXGroup;
+			children = (
+				6A787B4CBF2F5C4EFD17579EF84374B9 /* ionicons.swift */,
+				8639F6CCDDFA5F3BBEFD3E1E90D9791F /* Resources */,
+				010500F381E3C6551B2E0EC22FF209C3 /* Support Files */,
+			);
+			name = IoniconsSwift;
+			path = IoniconsSwift;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -190,11 +243,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4487C7EB524319D812855D435D8C5B7F /* Headers */ = {
+		C3D614D041A3EF4EF826AC2014898E35 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				01DA5E8BD538718902F3A79D69D9888D /* Pods-Byndr-umbrella.h in Headers */,
+				1B479C73B015D794EA266528AB3DD675 /* GrowingTextView-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE014250DFDBAEDA37791811F31003F4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B96C686E0BD23F6BF7AECE1A52EF1F5 /* Pods-Byndr-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,25 +277,43 @@
 			);
 			name = IoniconsSwift;
 			productName = IoniconsSwift;
-			productReference = 8DA33810823E4590176E3230E6724ED3 /* IoniconsSwift.framework */;
+			productReference = 544592E48E40B8A4B177FF6E4C1C3BDA /* IoniconsSwift.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		A5488270E1AE73011B53B05923EF30F3 /* Pods-Byndr */ = {
+		57158A968A0971699BD3CCD7D8593B48 /* Pods-Byndr */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D0BBEBCAB1B82648C84038CDB6B1FD5A /* Build configuration list for PBXNativeTarget "Pods-Byndr" */;
+			buildConfigurationList = 77637D9E1021DE3FD3E1643A01395EB2 /* Build configuration list for PBXNativeTarget "Pods-Byndr" */;
 			buildPhases = (
-				4592FD6911BFA78FD5433700FEA9159C /* Sources */,
-				C7808DE26E750656D2098E3CF5ED2CFF /* Frameworks */,
-				4487C7EB524319D812855D435D8C5B7F /* Headers */,
+				322F4F30929865C0C88EFC789EAC1830 /* Sources */,
+				82C6ECE8F870DD25587D90977F442788 /* Frameworks */,
+				CE014250DFDBAEDA37791811F31003F4 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				FC5DDAEF5789C7E78121A217B6C9127B /* PBXTargetDependency */,
+				F5F868A1673D604609A4A26B1EFC264E /* PBXTargetDependency */,
+				6E40F795F357EC1B05BECA005E04BEEE /* PBXTargetDependency */,
 			);
 			name = "Pods-Byndr";
 			productName = "Pods-Byndr";
-			productReference = 203C212FC33E3A2AA253615A65D9F453 /* Pods_Byndr.framework */;
+			productReference = A0560FAFA5FE8895C3F69F6E650611BC /* Pods_Byndr.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		ACEF46F3B8A411DED7BF5C736506D068 /* GrowingTextView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42D06AB6B47A55D6657753C9AF1E4D6B /* Build configuration list for PBXNativeTarget "GrowingTextView" */;
+			buildPhases = (
+				A55536A889CFB76122EC634DF366C8DB /* Sources */,
+				42A6C24D47E8DE3CF577B4540E0F9ED9 /* Frameworks */,
+				C3D614D041A3EF4EF826AC2014898E35 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GrowingTextView;
+			productName = GrowingTextView;
+			productReference = F36A0321DC60763175497061ADDAF7FA /* GrowingTextView.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -254,12 +333,13 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 3574182C80E1748B96049D7E076E8FB5 /* Products */;
+			productRefGroup = C22FD1EC3E6333A29370A351E77B737D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				ACEF46F3B8A411DED7BF5C736506D068 /* GrowingTextView */,
 				1B5AB2C856EB68E3ECE8C535BF5957A0 /* IoniconsSwift */,
-				A5488270E1AE73011B53B05923EF30F3 /* Pods-Byndr */,
+				57158A968A0971699BD3CCD7D8593B48 /* Pods-Byndr */,
 			);
 		};
 /* End PBXProject section */
@@ -276,11 +356,11 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		4592FD6911BFA78FD5433700FEA9159C /* Sources */ = {
+		322F4F30929865C0C88EFC789EAC1830 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8FFA233D258412199CA01FA5E31A0B12 /* Pods-Byndr-dummy.m in Sources */,
+				512B3A0DCA239BCB79DF9E8E3BF38D76 /* Pods-Byndr-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,51 +373,34 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A55536A889CFB76122EC634DF366C8DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB687909577B7EAE55098B7A2762D7F7 /* GrowingTextView-dummy.m in Sources */,
+				55BDF6E8402892504C677611F5A983A6 /* GrowingTextView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		FC5DDAEF5789C7E78121A217B6C9127B /* PBXTargetDependency */ = {
+		6E40F795F357EC1B05BECA005E04BEEE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = IoniconsSwift;
 			target = 1B5AB2C856EB68E3ECE8C535BF5957A0 /* IoniconsSwift */;
-			targetProxy = 2E8B26DA728DCCBBCE793CD48323262C /* PBXContainerItemProxy */;
+			targetProxy = 666A95BE49640B4702BE6447161A587D /* PBXContainerItemProxy */;
+		};
+		F5F868A1673D604609A4A26B1EFC264E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GrowingTextView;
+			target = ACEF46F3B8A411DED7BF5C736506D068 /* GrowingTextView */;
+			targetProxy = 9E624DF3151674D8D2B3D5395E4D52C3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		1C9F9487287FB7AAA739565C879665D9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D8F97285C8CF3D788F55E5F4E719E2E9 /* IoniconsSwift.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/IoniconsSwift/IoniconsSwift-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/IoniconsSwift/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/IoniconsSwift/IoniconsSwift.modulemap";
-				PRODUCT_NAME = IoniconsSwift;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		26FFEE34087F0EC1DEB182C42AD20B7D /* Debug */ = {
+		1608F9F5884D881F567D640FE9690956 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0CBA5BD4E4F1ACF7A7D99B21D183AA2A /* Pods-Byndr.debug.xcconfig */;
 			buildSettings = {
@@ -370,6 +433,104 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
+		};
+		1C9F9487287FB7AAA739565C879665D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD627FADE5D39FFA632E284E72A794AA /* IoniconsSwift.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/IoniconsSwift/IoniconsSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/IoniconsSwift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/IoniconsSwift/IoniconsSwift.modulemap";
+				PRODUCT_NAME = IoniconsSwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2E02D72C1DBC953DB37EE895A14D1CA6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9BA49D4DF7896B18C7EE44036B145E78 /* Pods-Byndr.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Byndr/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Byndr/Pods-Byndr.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Byndr;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3F7E63FEB2AC4317AD20179CAD259CE6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C576B42C8BF40417D5922202F686C8A /* GrowingTextView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/GrowingTextView/GrowingTextView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GrowingTextView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/GrowingTextView/GrowingTextView.modulemap";
+				PRODUCT_NAME = GrowingTextView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 		6F9224530522DD3C735EC96CF142642E /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -425,6 +586,37 @@
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
+		};
+		98F4A5AE74D49749AA947A9F01DA0999 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C576B42C8BF40417D5922202F686C8A /* GrowingTextView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/GrowingTextView/GrowingTextView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GrowingTextView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/GrowingTextView/GrowingTextView.modulemap";
+				PRODUCT_NAME = GrowingTextView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 		B57951D085A1B98A97F8A1062A5E5C5B /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -486,43 +678,9 @@
 			};
 			name = Debug;
 		};
-		DF14B802150E016E3BB53D46B081BFBC /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9BA49D4DF7896B18C7EE44036B145E78 /* Pods-Byndr.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Byndr/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Byndr/Pods-Byndr.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_Byndr;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		EC90983F09F7087272F2496CD41660CA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D8F97285C8CF3D788F55E5F4E719E2E9 /* IoniconsSwift.xcconfig */;
+			baseConfigurationReference = DD627FADE5D39FFA632E284E72A794AA /* IoniconsSwift.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -563,20 +721,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		42D06AB6B47A55D6657753C9AF1E4D6B /* Build configuration list for PBXNativeTarget "GrowingTextView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98F4A5AE74D49749AA947A9F01DA0999 /* Debug */,
+				3F7E63FEB2AC4317AD20179CAD259CE6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		77637D9E1021DE3FD3E1643A01395EB2 /* Build configuration list for PBXNativeTarget "Pods-Byndr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1608F9F5884D881F567D640FE9690956 /* Debug */,
+				2E02D72C1DBC953DB37EE895A14D1CA6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		B5666C1BE2926B5D196914EC98DA7D6D /* Build configuration list for PBXNativeTarget "IoniconsSwift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EC90983F09F7087272F2496CD41660CA /* Debug */,
 				1C9F9487287FB7AAA739565C879665D9 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D0BBEBCAB1B82648C84038CDB6B1FD5A /* Build configuration list for PBXNativeTarget "Pods-Byndr" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				26FFEE34087F0EC1DEB182C42AD20B7D /* Debug */,
-				DF14B802150E016E3BB53D46B081BFBC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

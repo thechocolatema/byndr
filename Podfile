@@ -7,5 +7,7 @@ target 'Byndr' do
 
   # Pods for Byndr
  pod 'IoniconsSwift', :git => 'http://github.com/tidwall/IoniconsSwift.git', :branch => 'master'
+pod 'GrowingTextView', '~> 0.5.4'
+
 
 end
